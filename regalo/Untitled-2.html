@@ -1,0 +1,87 @@
+<html>
+
+<head>
+           <title><strong>Regalo para mamá</strong></title>
+
+    <style>
+
+          body{
+
+                font-family: 'Times New Roman', Times, serif;
+                background: linear-gradient(to right, rgba(0, 174, 255, 0.933));
+            
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: rgb(22, 19, 19);
+            text-align: center  ;
+            }
+            
+            .container{ background-color: rgb(rgb(255, 180, 180), rgb(0, 0, 0), rgb(0, 0, 255));
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(rgb(0, 0, 0), rgb(251, 255, 0), rgb(255, 255, 255), alpha);
+            max-width: 400px;
+            }
+            h1{ font-size: 2.5rem;
+                margin-bottom: 10px;
+              }
+
+              button {
+
+                     background-color: rgb(255, 255, 255);
+                     color: black ;
+                     border: none;
+                     padding: 10px 20px;
+                     font-size: 1rem;
+                     border-radius: 5px;
+                     cursor: pointer;
+                     transition: background-color 0.4s;
+                }
+              
+              button:hover {
+
+                 background-color: rgb(0, 0, 0);
+                  }
+
+               .hidden-message {
+                                  display: none;
+                                  font-size: 1.5rem;
+                                  margin-top: 20px; 
+                             }
+
+          img { 
+            width:  300%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 10 px rgba(rgb(255, 255, 255), rgb(0, 0, 0), rgb(76, 76, 255), alpha);
+        }
+      </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <img src="c:\Users\DELL\Downloads\WhatsApp Image 2024-12-26 at 3.08.35 PM.jpeg" alt="feliz cumpleaños">
+        <h1>Para ti</h1>
+        <p><strong>Gracias por todo tu amor y apoyo. Eres la mejor mamá del mundo. ¡Te amo mucho!</strong></p>
+        <button onclick="revealMessage()">Haz clic aquí para un mensaje especial</button>
+        <div class="hidden-message" id="hiddenMessage">🎁 ¡Gracias por ser mi mamá! 🎁</div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+
+
+
+</html>
